@@ -73,7 +73,7 @@ public class BookInventory
 		}
 		for(Book b:bl)
 		{
-			System.out.println(b.getISBN()+b.getName()+b.getAuthor()+b.getPrice());
+			System.out.println(b.getISBN()+" "+b.getName()+" "+b.getAuthor()+" "+b.getPrice());
 		}
 	}
 }
