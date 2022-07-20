@@ -27,11 +27,18 @@ public class source
 		switch(ac.ope.charAt(0))
 		{
 			case '+': return ac.str1+ac.str2;
-			case '-': subtraction(ac.str1, ac.str2);			
+			case '-': if(ac.str1.length() > ac.str2.length())
+					  {
+						return ac.str1.replace(ac.str2,"");
+					  }
+					  else
+					  {
+						  return ac.str2.replace(ac.str1,"");
+					  }
 			default: throw new InvalidOperatorException("Invalid Operator");
 		}
 	}
-	String subtraction(String s1, String s2) throws NoSubStringException
+	/*String subtraction(String s1, String s2) throws NoSubStringException
 	{
 		if(s1.length()>s2.length())
 		{
@@ -60,5 +67,5 @@ public class source
 			}
 		}
 		
-	}
+	}*/
 }
